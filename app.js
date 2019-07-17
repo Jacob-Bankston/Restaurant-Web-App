@@ -11,28 +11,40 @@ let entreeSwitch = document.getElementById("entreeSwitch")
 let dessertSwitch = document.getElementById("dessertSwitch")
 
 let starters = filteredStarters.map(dish => `<div class="starter">
-                                                <h3 class="title">${dish.title}</h3>
-                                                <span class="description">${dish.description}<span>
-                                                <span class="price">${dish.price}<span>
-                                                <img src="${dish.imageURL}"/>
+                                                <img class="tasty-food-pic" src="${dish.imageURL}"/>
+                                                <div class="text">
+                                                    <div class="title-and-price">
+                                                        <h3 class="title">${dish.title}</h3>
+                                                        <span class="price">$${dish.price}<span>
+                                                    </div>
+                                                    <span class="description">${dish.description}<span>
+                                                </div>
                                             </div>`);
                                             
 starters.forEach(dish => {startersDiv.insertAdjacentHTML('beforeend', dish);})
 
 let entrees = filteredEntrees.map(dish => `<div class="entree">
-                                                <h3 class="title">${dish.title}</h3>
-                                                <span class="description">${dish.description}<span>
-                                                <span class="price">${dish.price}<span>
-                                                <img src="${dish.imageURL}"/>
+                                                <img class="tasty-food-pic" src="${dish.imageURL}"/>
+                                                <div class="text">
+                                                    <div class="title-and-price">
+                                                        <h3 class="title">${dish.title}</h3>
+                                                        <span class="price">$${dish.price}<span>
+                                                    </div>
+                                                    <span class="description">${dish.description}<span>
+                                                </div>
                                             </div>`);
 
 entrees.forEach(dish => {entreesDiv.insertAdjacentHTML('beforeend', dish);})
 
 let desserts = filteredDesserts.map(dish => `<div class="dessert">
-                                                <h3 class="title">${dish.title}</h3>
-                                                <span class="description">${dish.description}<span>
-                                                <span class="price">${dish.price}<span>
-                                                <img src="${dish.imageURL}"/>
+                                                <img class="tasty-food-pic" src="${dish.imageURL}"/>
+                                                <div class="text">
+                                                    <div class="title-and-price">
+                                                        <h3 class="title">${dish.title}</h3>
+                                                        <span class="price">$${dish.price}<span>
+                                                    </div>
+                                                    <span class="description">${dish.description}<span>
+                                                </div>
                                             </div>`);
 
 desserts.forEach(dish => {
