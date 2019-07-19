@@ -137,13 +137,11 @@ body {
 .tasty-food-pic {
     border: 3px solid black;
     border-radius: 6px;
-    background-color: rgba(0,0,0,0.2));
+    background-color: rgba(0,0,0,0.1);
     padding: 10px;
     width: 150px;
     height: auto;
 }
-
-
 
 .switch {
     position: relative;
@@ -202,10 +200,6 @@ input:checked + .slider:before {
 
 .slider.round:before {
     border-radius: 50%;
-}
-
-@media screen and (max-width: 988px) {
-
 }
 
 @media screen and (max-width: 600px) {
